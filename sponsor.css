@@ -1,0 +1,216 @@
+body,
+html {
+  margin: 0;
+  height: 100%;
+}
+
+.container {
+  background: url(1.png);
+  height: 100%;
+  background-color: #7A003B;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container--blend {
+  background-blend-mode: screen;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  /* padding: 15px 20px; */
+  position: relative;
+}
+
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 5px;
+  left: 50%;
+  position: center;
+  background: #7A003B;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.sponsor-button {
+  margin-top: 100px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  --c: #71083B;
+  color: #fff;
+  font-size: 16px;
+  border: 0.3em solid var(--c);
+  border-radius: 40px;
+  width: 12em;
+  height: 3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 3em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 1em;
+}
+
+nav ul li span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #fff;
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+nav ul li:hover {
+  color: #71083B;
+}
+
+nav ul li:hover span {
+  transform: translateY(0) scale(2);
+}
+
+nav ul li span:nth-child(1) {
+  --n: 1;
+}
+
+nav ul li span:nth-child(2) {
+  --n: 2;
+}
+
+nav ul li span:nth-child(3) {
+  --n: 3;
+}
+
+nav ul li span:nth-child(4) {
+  --n: 4;
+}
+
+#footer {
+  background-color: #7A003B;
+  height: 27%;
+}
+
+.vit-logo {
+  position: absolute;
+  width: 223px;
+  height: 76px;
+  left: 102px;
+  top: 750px;
+}
+
+.wie-logo {
+  position: absolute;
+  width: 86px;
+  height: 94.7px;
+  left: 345px;
+  top: 750px;
+}
+
+.contact-us {
+  position: absolute;
+  width: 137px;
+  height: 29px;
+  left: 689px;
+  top: 730px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height */
+  color: #FEF9F9;
+}
+
+.names {
+  position: absolute;
+  width: 137px;
+  height: 29px;
+  left: 552px;
+  top: 750px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height */
+  color: #FEF9F9;
+}
+
+.names ul {
+  list-style: none;
+}
+
+.email {
+  position: absolute;
+  width: 157px;
+  height: 29px;
+  left: 693px;
+  top: 750px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height */
+  color: #FEF9F9;
+}
+
+.email ul {
+  list-style-type: none;
+}
+
+.pno {
+  position: absolute;
+  width: 137px;
+  height: 29px;
+  left: 830px;
+  top: 750px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height */
+  color: #FEF9F9;
+}
+
+.pno ul {
+  list-style: none;
+}
