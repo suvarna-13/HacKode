@@ -1,0 +1,300 @@
+body
+{
+    background-color:#111;
+}
+.one1
+  {
+  text-align: center;
+  color: #FFFBFB;
+  text-decoration: underline #8D2255 ;
+  padding-top: 2%;
+
+  }
+  .two2
+  {
+    
+text-align: center;
+font-family: Roboto;
+padding: 1%;
+
+  }
+  .one1 h1:hover
+  {
+    text-decoration: underline blue;
+  }
+  .three3
+  {
+    
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 35px;
+letter-spacing: 0em;
+text-align: center;
+
+margin-left: 15%;
+margin-right: 15%;
+
+  }
+  .four4
+  {
+  text-align: center;
+  color: #FFFBFB;
+  text-decoration: underline #8D2255 ;
+  padding-top: 4%;
+
+  }
+  .four4 h1:hover
+  {
+    text-decoration: underline blue ;
+  }
+  .five5
+  {
+    
+text-align: center;
+font-family: Roboto;
+text-transform: uppercase;
+padding: 1%;
+padding: 1%;
+
+padding-bottom: 2%;
+
+  }
+.card
+{
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 45px;
+    height: 362px;
+    width: 342px;
+    padding: 1%;
+    
+
+}
+
+.first
+{   padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+
+
+
+}
+.second
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+  
+   
+
+}
+.one
+{
+
+height: 362px;
+width: 342px;
+left: 84px;
+top: 2611px;
+border-radius: 45px;
+background: #000000;
+box-shadow: -4px -4px 4px 0px #FFFBFB70;
+margin-bottom: 5%;
+
+
+
+
+
+}
+.t_shree
+{
+height: 165px;
+width: 201px;
+left: 632px;
+top: 2272px;
+border-radius: 0px;
+background: #262626;
+font-family: Roboto;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 56px;
+letter-spacing: 0em;
+text-align: left;
+background: #FFFFFF;
+
+
+}
+.t_one
+{   height: 78px;
+    width: 282px;
+    left: 119px;
+    top: 2874px;
+    border-radius: nullpx;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    
+     
+    
+}
+
+.two{
+    height: 362px;
+width: 342px;
+left: 549px;
+top: 2611px;
+border-radius: 45px;
+background: #000000;
+box-shadow: -4px -4px 4px 0px #FFFBFB70;
+margin-bottom: 5%;
+
+
+}
+
+.three{
+    height: 362px;
+width: 342px;
+left: 1014px;
+top: 2611px;
+border-radius: 45px;
+background: #000000;
+box-shadow: -4px -4px 4px 0px #FFFBFB70;
+margin-bottom: 5%;
+
+
+
+}
+
+.four{
+    height: 362px;
+width: 342px;
+left: 308px;
+top: 3042px;
+border-radius: 45px;
+background: #000000;
+box-shadow: -4px -4px 4px 0px #FFFBFB70;
+margin-bottom: 5%;
+
+
+}
+
+.five{
+    height: 362px;
+    width: 342px;
+    left: 793px;
+    top: 3042px;
+    border-radius: 45px;
+    background: #000000;
+    box-shadow: -4px -4px 4px 0px #FFFBFB70;
+    margin-bottom: 5%;
+
+    
+}
+
+
+.one:hover{
+    transform: scale(1.1);
+}    
+    
+    
+.two:hover{
+    transform: scale(1.1);
+}
+.three:hover{
+    transform: scale(1.1);
+}
+.four:hover{
+    transform: scale(1.1);
+}
+.five:hover{
+    transform: scale(1.1);
+}
+
+@media all and (max-width:1100px)
+{
+    .final
+    {
+        padding: 7%;
+        margin-left: 25%;
+     
+       
+    }
+    .first
+    {   
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+      
+    }
+    .one{
+     margin-bottom: 8%;
+   
+    }
+    .two{
+        margin-bottom: 8%;
+    }
+    .three{
+        margin-bottom: 8%;
+    }
+    .four
+    {
+        margin-bottom: 8%;
+    }
+    .five{
+        margin-bottom: 8%;
+    }
+    .second
+    {   
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+       
+    }
+}
+@media all and (max-width:700px)
+{
+    .final
+    {
+        padding: 5%;
+        margin-left: 5%;
+    }
+    .first
+    {   
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+      
+    }
+    .one{
+        margin-bottom: 5%;
+       }
+       .two{
+           margin-bottom: 5%;
+       }
+       .three{
+           margin-bottom: 5%;
+       }
+       .four
+       {
+           margin-bottom: 5%;
+       }
+       .five{
+           margin-bottom: 5%;
+       }
+    .second
+    {   
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        
+    }
+}
