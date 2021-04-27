@@ -125,6 +125,7 @@ nav ul li span:nth-child(4) {
 #footer {
   background-color: #7A003B;
   height: 27%;
+  display: flex;
 }
 
 .vit-logo {
@@ -132,15 +133,21 @@ nav ul li span:nth-child(4) {
   width: 223px;
   height: 76px;
   left: 102px;
-  top: 750px;
+  top: 800px;
+  cursor: pointer;
 }
 
 .wie-logo {
   position: absolute;
   width: 86px;
   height: 94.7px;
-  left: 345px;
-  top: 750px;
+  left: 370px;
+  top: 800px;
+  cursor: pointer;
+}
+.wie-logo img{
+  width:86px;
+  height: 94.7px;
 }
 
 .contact-us {
@@ -148,7 +155,7 @@ nav ul li span:nth-child(4) {
   width: 137px;
   height: 29px;
   left: 689px;
-  top: 730px;
+  top: 790px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -163,7 +170,7 @@ nav ul li span:nth-child(4) {
   width: 137px;
   height: 29px;
   left: 552px;
-  top: 750px;
+  top: 800px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -182,7 +189,7 @@ nav ul li span:nth-child(4) {
   width: 157px;
   height: 29px;
   left: 693px;
-  top: 750px;
+  top: 800px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -201,7 +208,7 @@ nav ul li span:nth-child(4) {
   width: 137px;
   height: 29px;
   left: 830px;
-  top: 750px;
+  top: 800px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -213,4 +220,31 @@ nav ul li span:nth-child(4) {
 
 .pno ul {
   list-style: none;
+}
+
+.social-handles span {
+  position: absolute;
+
+  right: 20.69%;
+  top: 110%;
+  bottom: 0.65%;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #fff;
+  float: left;
+  cursor: pointer;
+}
+.insta{
+  left: 77.01%;
+  border-radius: 50%;
+  background: #;
+}
+.twitter{
+  left: 82.01%;
+}
+.fb{
+  left:87.01%;
+}
+.linkedin{
+  left:92.01%;
 }
