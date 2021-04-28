@@ -1,0 +1,104 @@
+body{
+    
+    background-color: black;
+}
+.title {
+
+    font-size: 64px;
+    color: white;
+    padding-bottom: 4px;
+    position: relative;
+    text-decoration: none;
+}
+.title::after {
+    background: #E71178;
+    background: linear-gradient(to right, transparent 0%, #E71178 50%, transparent 100%);  
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+
+.text-style{
+    color: #E71178;
+    border-radius: nullpx;
+    font-family: Roboto;
+    font-size: 41px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.head-text{
+    width:calc(100%+20px);
+    display:flex;
+    flex-wrap: wrap;
+    background-color:black;
+    margin:5vh auto 0;
+    justify-content:space-around;
+    
+  }
+  .inside-text{
+    padding:20px;
+    height: 50px;
+    width: 187px;
+    font-weight: bold;
+  }
+  .container{
+    display:flex;
+    flex-wrap:wrap;
+    margin: 4vh auto 0;
+    justify-content: center; 
+    align-items: center;
+  }
+  .tr-div{
+    font-size: 41px;
+    text-align:center;
+    width: 34vw;
+    padding-top: 5%;
+    justify-content: space-around; 
+    align-items: center;
+    font-style: normal;
+font-weight: normal;
+  }
+  .img-div{
+    width: 100%;
+    padding-top: 8%;
+  }
+  .money-div{
+    font-size: 40px;
+    text-align: cener;
+    /* width:238px ; */
+    align-items: center;
+    /* padding-bottom: 5%; */
+    font-size: 23px;
+font-style: normal;
+  }
+@media screen and (max-width: 550px) {
+    .tr-div{
+        width: 100%;
+    }
+}
