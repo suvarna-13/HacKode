@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+
+<link href="gradient.css" rel="stylesheet">
+
+    
+
+
+
+    
+
+    <title>Hackode</title>
+
+    <style>
+body {
+  margin: 30px;
+  
+  
+  
+  
+
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #050505;
+}
+
+
+        .nav {
+  height: 50px;
+  width: 100%;
+  background-color: #050505;
+  position: relative;
+}
+ 
+.nav > .nav-header {
+  display: inline;
+}
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 0px; /*10*/
+}
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 16px;
+}
+.logo{
+    height: 60px;
+    width: 100px;
+}
+ 
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 20px 10px 13px 30px;
+  text-decoration: none;
+  color: #efefef;
+}
+ 
+.nav > .nav-links > a:hover {
+    
+  padding: 10px;
+  padding: 20px 10px 13px 30px;
+    box-shadow: 0 0 0px rgb(230, 64, 174);
+  border-radius: 0px;
+  color: #050505;
+  background: linear-gradient(180deg, var(--c1, #8b045e), var(--c2, #e06cba) 51%, var(--c1, #f7f1f5)) var(--x, 0)/ 200%;
+}
+.nav > .nav-btn,
+.nav > #nav-check {
+  display: none;
+}
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 30px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: rgb(165, 7, 112);
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+  
+  * {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: top;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+  
+
+    
+</head>
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            <img src="HACK 2.svg" alt="hackx logo" class="logo">
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="">About Us</a>
+          <a href="">Schedule</a>
+          <a href="">Theme</a>
+          
+          <a href="">Prizes</a>
+          <a href="">Sponsors</a>
+          
+          <a href="">Contacts</a>
+        </div>
+      </div>
+    
+
+
+      
+  
+ 
+      
+  <section class="text-gray-600 body-font">
+  <div class="container px-8 py-24 mx-auto">
+    <div class="flex flex-wrap -mx-10 -mb-10 text-center">
+      <div class="sm:w-1/2 mb-10 px-12">
+        <div class="rounded-lg h-100 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full*2 w-full" src="HACK 1.svg">
+          
+          
+          
+        </div>
+        <div class="rounded-lg h-100 overflow-hidden">
+          
+         
+          <img alt="content" class="inline-block align-middle object-cover object-center -mx-4 h-full/3 w-full/3 " src="Work.Inspire.Empower.svg">
+          <button id="buttonmine" class="flex mx-auto mt-6 text-white bg-black-500 py-2 px-5 focus:outline-none hover:bg-white-500 rounded-3xl">Register Now</button>
+        </div>
+        
+      </div>
+      <div class=" -mx-14 -mb-10 px-36">
+        <div class="rounded-lg h-100 overflow-hidden">
+          <div class="gradient-border">
+        <p id="demo"></p>
+          </div>
+        </div>
+       
+        
+       
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

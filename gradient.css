@@ -1,0 +1,63 @@
+.gradient-border {
+    --border-width: 3px;
+  
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55vmin;
+    height: 55vmin;
+    
+    
+    border: 3vmin;
+  
+   
+  
+  
+    font-family: Lato, sans-serif;
+    font-size: 2.5rem;
+    /*text-transform: uppercase;*/
+    color: rgb(8, 8, 8);
+   /* background: #222;
+    border-radius: var(--border-width);*/
+    background: black;
+    border-radius: 50%;
+  }
+    .gradient-border::after {
+      position: absolute;
+      content: "";
+      top: calc(-3 * var(--border-width));
+      left: calc(-3 * var(--border-width));
+      z-index: -1;
+      width: calc(100% + var(--border-width) * 5.7);
+      height: calc(100% + var(--border-width) * 5.7);
+      background: linear-gradient(
+        60deg,
+        hsl(297, 15%, 26%),
+        hsl(300, 12%, 24%),
+        hsl(335, 83%, 35%),
+        hsl(330, 87%, 46%),
+        hsl(340, 6%, 20%),
+        hsl(335, 85%, 47%),
+        hsl(300, 8%, 28%),
+        hsl(308, 12%, 25%)
+      );
+      background-size: 300% 300%;
+      background-position: 0 50%;
+      /*border-radius: calc(2 * var(--border-width));*/
+      border-radius: calc(2 * 50%);
+      animation: moveGradient 4s alternate infinite;
+    }
+  
+  
+  @keyframes moveGradient {
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  
+
+
+
+  
+  
