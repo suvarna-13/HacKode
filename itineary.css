@@ -1,0 +1,185 @@
+*{
+    background-color: black;
+    
+}
+.ball-text {
+    fill: white;
+    height: 110px;
+    color: white;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    }
+.ball-text:hover {
+    fill: #E71178;
+    color: #E71178;
+}
+.text{
+    float: left;
+    width: 250px;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+.ball{
+    float: right;
+    height: 100px;
+    cursor: pointer;
+}
+.cont{
+    float: left;
+    width: 400px;
+    height: 1000px;
+    padding-top: 100px;
+}
+svg{
+    margin: 0 auto;
+}
+b{
+      font-weight: bold;
+      font-size: 36px;
+ }
+
+ .container{
+     padding-top: 60px;
+     width: 800px;
+     height: 1000px;
+     margin: 0 auto;
+ }
+ .title {
+    font-size: 64px;
+    color: white;
+    padding-bottom: 4px;
+    position: relative;
+    text-decoration: none;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+}
+.title::after {
+    background: #E71178;
+    background: linear-gradient(to right, transparent 0%, #E71178 50%, transparent 100%);  
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+
+.tube{
+    float: right;
+    width: 226px;
+    height: 1300px;
+    background-color:#2E1421 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 500px 500px 500px 500px;
+   
+    margin-bottom: 50px;
+ }
+ .water{
+     background-color: transparent;
+     height: 100%;
+     padding-top: 100px;
+ }
+.liquid {
+  background-color: #E71178;
+  color: #fff;
+border-bottom-left-radius:500px ;
+border-bottom-right-radius:500px ;
+  height:100%;
+  
+}
+.tt {
+  width:100%;
+  background-color:#2E1421;
+  padding-top: 1000px;
+  transition: 1s;
+}
+
+
+.wave {
+  animation: wave 1s linear;
+  animation-iteration-count:infinite;
+  fill: #E71178;
+}
+.drop {
+  fill: transparent;
+  animation: drop 5s ease infinite normal;
+  stroke: #E71178;
+  stroke-width:0.5;
+  opacity:.6; 
+  transform: translateY(80%);
+}
+.drop1 {
+  transform-origin: 20px 3px;
+}
+.drop2 {
+  animation-delay: 3s;
+  animation-duration:3s;
+  transform-origin: 25px 3px;
+}
+.drop3 {
+  animation-delay: -2s;
+  animation-duration:3.4s;
+  transform-origin: 16px 3px;
+}
+.gooeff {
+  	filter: url(#goo);
+}
+#wave2 {
+  animation-duration:5s;
+  animation-direction: reverse;
+  opacity: .6
+}
+#wave3 {
+  animation-duration: 7s;
+  opacity:.3;
+}
+@keyframes drop {
+  0% {
+    transform: translateY(80%); 
+    opacity:.6; 
+  }
+  80% {
+    transform: translateY(80%); 
+    opacity:.6; 
+  }
+  90% { 
+    transform: translateY(10%) ; 
+    opacity:.6; 
+  }
+  100% { 
+    transform: translateY(0%) scale(1.5);  
+    stroke-width:0.2;
+    opacity:0; 
+  }
+}
+@keyframes wave {
+  to {transform: translateX(-100%);}
+}
+
