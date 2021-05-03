@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <link rel="stylesheet" href="landing-page.css">
+</head>
+<body>
+    <div class="container">
+       <div class="navbar">
+            <img src="images/HACK 2.svg" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li class="abt"><a href="">About</a></li>
+                    <li class="sch"><a href="">Schedule</a></li>    
+                    <li class="theme"><a href="">Theme</a></li>    
+                    <li class="spons"><a href="">Sponsors</a></li>    
+                    <li class="cont"><a href="">Contact us</a></li>    
+                </ul>
+            </nav>
+            <div class="menu-icon" onclick="togglemenu()">
+              <svg class="ham hamRotate180 ham5" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                <path
+                      class="line top"
+                      d="m 30,33 h 40 c 0,0 8.5,-0.68551 8.5,10.375 0,8.292653 -6.122707,9.002293 -8.5,6.625 l -11.071429,-11.071429" />
+                <path
+                      class="line middle"
+                      d="m 70,50 h -40" />
+                <path
+                      class="line bottom"
+                      d="m 30,67 h 40 c 0,0 8.5,0.68551 8.5,-10.375 0,-8.292653 -6.122707,-9.002293 -8.5,-6.625 l -11.071429,11.071429" />
+            </svg>  
+            </div>
+            
+        </div> 
+        <div class="row">
+            <div class="col1">
+                <img src="images/HACK 1.svg" alt="" class="hack-img">
+                <p>Work.Inspire.Empower</p>
+                <div class="btn">
+                 <a href="#" class="button-anon-pen">
+                    <span>Register now</span>
+                </a>   
+                </div>
+                
+            </div>
+            <div class="col2">
+                <div class="time">
+                    <div class="time-cont">
+                        <span>
+                        <div class="timer">
+                          <div id="timer1"></div>
+                          <div id="timer2"></div> 
+                       </div>
+                    </span>
+                   </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="landing-page.js">
+        
+    </script>
+</body>
+</html>
